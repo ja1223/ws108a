@@ -10,7 +10,7 @@
   "dependencies": {
     "chai": "^4.2.0",
     "chinese_convert": "^1.0.8",
-    "koa": "^2.8.2",
+    "koa": "^2.11.0",
     "koa-body": "^4.1.0",
     "koa-bodyparser": "^4.2.1",
     "koa-logger": "^3.2.0",
@@ -19,6 +19,7 @@
     "markdown-it": "^8.4.2",
     "mocha": "^6.1.4",
     "mongodb": "^3.2.7",
+    "net": "^1.0.2",
     "should": "^13.2.3",
     "supertest": "^4.0.2"
   },

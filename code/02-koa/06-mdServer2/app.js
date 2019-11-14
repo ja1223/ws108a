@@ -20,7 +20,7 @@ app.use(async function(ctx) {
       ctx.type = '.html'//ctx.type描述檔案屬性為 .html
       ctx.body = html
     } else {
-      ctx.type = ext //ctx.type描述檔案屬性為其檔案的副檔名
+      ctx.type = ext //ctx.type(描述檔案屬性) = 檔案的副檔名
       ctx.body = fs.createReadStream(fpath)//讀完檔案用串流方式傳回
     }
   }

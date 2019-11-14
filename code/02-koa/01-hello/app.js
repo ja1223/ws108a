@@ -3,7 +3,10 @@ const app = module.exports = new Koa();
 
 app.use(async function(ctx) {
   console.log('url=', ctx.url)
-  ctx.body = 'Hello World';//設定傳回訊息(預設純文字),可用ctx.type設定html外觀
+  ctx.body = 'Hello World';
+  //設定傳回訊息(預設純文字)
+  //ctx.type=text/html 設定html外觀
+  //ctx.type=text/plain 純文字
 });
 
 if (!module.parent) app.listen(3000);

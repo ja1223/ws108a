@@ -16,8 +16,8 @@ app.use(async function(ctx) {
     ctx.body = fs.createReadStream(fpath);//createReadStream -> 讀完檔案用串流方式傳回(可以省記憶體)
 
     let type = path.extname(fpath)
-    console.log('type=',type)//普通的副檔名
-    console.log('ctx.type=',ctx.type)//副檔名(在http中的標準格式)
+    console.log('type=',type)//普通的副檔名  (.md)
+    console.log('ctx.type=',ctx.type)//副檔名(在http中的標準格式)  (text/markdown)
     console.log('ctx.body=',ctx.body)
   }
 });
