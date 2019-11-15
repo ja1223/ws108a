@@ -4,11 +4,12 @@
 
 ## 00-nodejs
 [variable](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/00-nodejs/02-variable/variable.js)
-
+:註解了幾種宣告變數的方法差異
 ## 01-http
 [koa server](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/01-http/01-koaServer/koaServer.js)
-
+:註解了一些簡單的ctx及物件的相關內容
 ## 02-koa
+
 [hello](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/02-koa/01-hello/app.js)  
 
 [static](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/02-koa/03-static/app.js)  
