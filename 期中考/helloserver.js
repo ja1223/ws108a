@@ -1,4 +1,4 @@
-const http = require('http');
+const http = require('http');//需要使用http這個套件
 
 const hostname = '127.0.0.1';
 const port = 3000;//3000這個port如果已經使用就不能再給其他人用，除非將它關掉
