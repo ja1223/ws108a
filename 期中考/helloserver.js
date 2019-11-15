@@ -1,7 +1,7 @@
 const http = require('http');
 
 const hostname = '127.0.0.1';
-const port = 3000;//3000這個port如果佔用就不能再給其他人用，除非將它關掉
+const port = 3000;//3000這個port如果已經使用就不能再給其他人用，除非將它關掉
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;//200->正常運作
