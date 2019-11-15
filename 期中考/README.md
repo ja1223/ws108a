@@ -8,7 +8,7 @@
 ## 01-http
 [koa server](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/01-http/01-koaServer/koaServer.js)
 :註解了一些簡單的ctx及物件的相關內容
-## 02-koa
+## 02-koa:將使用到且不懂的地方加入註解(有些重複寫過很多次的註解)
 
 [hello](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/02-koa/01-hello/app.js)  
 
@@ -22,8 +22,9 @@
 
 [mdServerEdit](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/02-koa/07-mdServerEdit/app.js)
  
-## 03-host
+## 03-host:將使用到且不懂的地方加入註解(有些重複寫過很多次的註解)
 [mdServer](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/03-host/mdServer/app.js)
 
 ## 其他
 [helloServer](https://github.com/ja1223/ws108a/blob/master/%E6%9C%9F%E4%B8%AD%E8%80%83/helloserver.js)
+:最剛開始寫的server,只有輸出 Hello World 的功能
