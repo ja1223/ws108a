@@ -1,6 +1,6 @@
 # 期末專案:自己寫一個blog
 目前可以列出已經寫在程式內的文章，並正常顯示。
-## 製作blog大概順序
+## 製作blog大概順序(有些註解寫在程式內)
 ### 寫一個可以正常使用的Hello world網頁 (home)
 1. 需要koa -> const Koa = require('koa')
 2. 需要koa-router ->const router = require('koa-router')()   app.use(router.routes())
@@ -10,11 +10,8 @@
 後來用html寫了一個陽春的首頁，讓首頁顯示一些文字並有個按鈕可以連接到list
 
 ### 做出列表(list)
-<p>做一個迴圈把文章的資料一筆一筆的放入列表，並將列表塞入html裡面。</p>
-const list = []
-    for (let i=0; i<posts.length; i++) {
-        list.push(`<li><a href="/post/${i}">${posts[i].title}</a></li>`)
-    }
+做一個迴圈把文章的資料一筆一筆的放入列表，並將列表塞入html裡面。
+
 ### 讓文章頁面正常顯示(get)
 1. 設一個變數=文章的id
 2. 寫一個函式來顯示此id文章的標題及內容
