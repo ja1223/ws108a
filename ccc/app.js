@@ -19,8 +19,8 @@ console.log('server run at http://localhost:3000/')
 
 //顯示貼文內容
 function get(ctx) {
-    const id = ctx.params.id
-    ctx.body = posts
+    const id = ctx.params.id//設變數來表示posts的id
+    //ctx.body = posts
     ctx.body = render.show(posts[id])
     ctx.type = 'text/html'
     //console.log('title:',posts[id].title)
@@ -50,7 +50,7 @@ function postsToHtml(posts) {
     const list = []
     for (let i=0; i<posts.length; i++) {
         list.push(`<li><a href="/post/${i}">${posts[i].title}</a></li>`)
-    }
+    }//把文章的標題一個一個塞進列表
     //console.log(posts)
     return `
     <html>
@@ -61,5 +61,5 @@ function postsToHtml(posts) {
     ${list.join('\n')}
     </body>
     </html>
-    `
+    `//把剛剛做的列表塞入html並回傳
 }

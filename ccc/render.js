@@ -63,44 +63,11 @@ R.layout = function (title, content) {
   </body>
   </html>
   `
-} 
-
-/*R.list = function (posts) {
-  let list = []
-  for (let posts of posts) {
-    list.push(`
-    <li>
-      <h2>${ posts.title }</h2>
-      <p><a href="/post/${posts.id}">Read post</a></p>
-    </li>
-    `)
-  }
-  let content = `
-  <h1>Posts</h1>
-  <p>You have <strong>${posts.length}</strong> posts!</p>
-  <p><a href="/post/new">Create a Post</a></p>
-  <ul id="posts">
-    ${list.join('\n')}
-  </ul>
-  `
-  return R.layout('Posts', content)
-}*/
-
-/*R.new = function () {
-  return R.layout('New Post', `
-  <h1>New Post</h1>
-  <p>Create a new post.</p>
-  <form action="/post" method="post">
-    <p><input type="text" placeholder="Title" name="title"></p>
-    <p><textarea placeholder="Contents" name="body"></textarea></p>
-    <p><input type="submit" value="Create"></p>
-  </form>
-  `)
-}*/
+} //做一個html的格式並將得到的title跟content塞入指定的位置
 
 R.show = function (posts) {
   return R.layout(posts.title, `
     <h1>${posts.title}</h1>
     <p>${posts.body}</p>
   `)
-}
+}//把posts的title塞進layout的title位置，title跟body塞入content並回傳
