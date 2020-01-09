@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 10px;
 }
@@ -7,3 +8,14 @@ pre {
   background-color: #dddddd;
   border: 1px black solid;
 }
+=======
+body {
+  margin: 10px;
+}
+
+pre {
+  padding: 10px;
+  background-color: #dddddd;
+  border: 1px black solid;
+}
+>>>>>>> bbd52c73514bd042927b914e78759aac4eb0911f
