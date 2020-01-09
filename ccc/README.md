@@ -7,10 +7,14 @@
 3. 要new一個app -> const app = new Koa()
 4. app.listen(3000)
 5. 為了方便加console.log('server run at http://localhost:3000/')
+後來用html寫了一個陽春的首頁，讓首頁顯示一些文字並有個按鈕可以連接到list
 
 ### 做出列表(list)
-做一個迴圈把文章一筆一筆的放入列表，並將列表塞入html裡面。
-
+做一個迴圈把文章的資料一筆一筆的放入列表，並將列表塞入html裡面。
+const list = []
+    for (let i=0; i<posts.length; i++) {
+        list.push(`<li><a href="/post/${i}">${posts[i].title}</a></li>`)
+    }
 ### 讓文章頁面正常顯示(get)
 1. 設一個變數=文章的id
 2. 寫一個函式來顯示此id文章的標題及內容
