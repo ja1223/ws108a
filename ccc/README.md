@@ -1,5 +1,6 @@
 # 期末專案:自己寫一個blog
-
+目前可以列出已經寫在程式內的文章，並正常顯示。
+# 製作blog大概順序
 ## 寫一個可以正常使用的Hello world(home)
 1. 需要koa -> const Koa = require('koa')
   *要new一個app -> const app = new Koa()
