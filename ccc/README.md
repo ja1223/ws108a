@@ -11,6 +11,7 @@
 
 ### 做出列表(list)
 做一個迴圈把文章的資料一筆一筆的放入列表，並將列表塞入html裡面。
+---------------------------------------------------
 const list = []
     for (let i=0; i<posts.length; i++) {
         list.push(`<li><a href="/post/${i}">${posts[i].title}</a></li>`)
