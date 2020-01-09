@@ -1,3 +1,4 @@
+
 const session = require('koa-session');
 const Koa = require('koa');
 const app = new Koa();
@@ -28,7 +29,7 @@ app.use(ctx => {
   let n = ctx.session.views || 0;
   ctx.session.views = ++n;
   ctx.body = n + ' views';
-});
+});//此段程式用來記錄觀看人次
 
 app.listen(3000);
 console.log('Server run at http://localhost:3000/');

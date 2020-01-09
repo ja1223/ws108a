@@ -5,7 +5,7 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;//200->正常運作
-  res.setHeader('Content-Type', 'text/plain');//plain->純文字
+  res.setHeader('Content-Type', 'text/plain');//plain->純文字  html->html
   res.end('Hello World\n');
 });//回應程式
 

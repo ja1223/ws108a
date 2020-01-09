@@ -5,6 +5,7 @@ const koaBody = require('koa-body')
 const koaJson = require('koa-json')
 const koaStatic = require('koa-static')
 
+
 const Koa = require('koa')
 const app = module.exports = new Koa()
 
@@ -47,7 +48,9 @@ async function show (ctx) {
   const id = ctx.params.id
   const post = posts[id]
   if (!post) ctx.throw(404, 'invalid post id')
-  ctx.body = post
+  
+  
+  ctx.body =post
 }
 
 /**

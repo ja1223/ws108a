@@ -1,8 +1,10 @@
-var R = {}
+var R = {}//建一個空物件
 
-window.onhashchange = async function () {
+window.onhashchange = async function () {//window代表瀏覽器
   var r
   var tokens = window.location.hash.split('/')
+  //tokens 是一個陣列
+  //window.location 網址  .hash #後面到?之前的東西  split('/') 用/隔開
   console.log('tokens=', tokens)
   switch (tokens[0]) {
     case '#show':
@@ -19,7 +21,7 @@ window.onhashchange = async function () {
       R.list(posts)
       break
   }
-}
+}//用window跟document來操控瀏覽器
 
 window.onload = function () {
   window.onhashchange()
