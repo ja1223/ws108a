@@ -6,12 +6,12 @@ const render = require('./render');
 const posts = [
     { title: 'aaa', body: 'aaaaa' },
     { title: 'bbb', body: 'bbbbb' },
-]
+]//預設的2個文章
 
 router
   .get('/', home)
-  .get('/list', list)
-  .get('/post/:id', get)
+  .get('/list', list)//網址後/list 執行list這個函式
+  .get('/post/:id', get)//網址後/post/:id 執行get這個函式
 
 app.use(router.routes())
 app.listen(3000)
